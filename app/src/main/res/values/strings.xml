@@ -6,6 +6,7 @@
     <string name="no1">No</string>
     <string name="arrive">Arrive on time so as not to miss important part of the lesson</string>
     <string name="my">My personal reflection today</string>
-    <string name="ok">ok</string>
+    <string name="ok">OK</string>
     <string name="attempt">Attempt the problem myself</string>
+    <string name="done">done</string>
 </resources>

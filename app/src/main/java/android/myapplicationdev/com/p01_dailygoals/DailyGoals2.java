@@ -3,7 +3,10 @@ package android.myapplicationdev.com.p01_dailygoals;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
 
 public class DailyGoals2 extends AppCompatActivity {
 
@@ -11,6 +14,19 @@ public class DailyGoals2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_goals2);
+
+        Button btnDone = (Button) findViewById(R.id.buttonDone);
+
+        btnDone.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // This function closes Summary
+                // Hint: use Context's finish() method
+                finish();
+            }
+        });
 
         // Get the intent so as to get the "things" inside the intent
         Intent i = getIntent();
